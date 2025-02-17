@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Voting Platform</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <section class="loginset">
+        <div class="login-header">
+            <img src="Img\IMG_2380.JPG" alt="School Voting Platform Logo">
+            <h1>Select the candidate of your choice and vote</h1>
+        </div>
+        <br>
+        <br>
+    
+        <div id="login-section" class="login-container">
+            <h2>STUDENT LOGIN</h2><br>
+            <div class="form-group">
+                <label for="student-id">Student ID</label>
+                <input type="text" id="student-id" placeholder="Enter your Student ID">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button class="btn" id="login-btn">Login</button>
+            <p id="login-error" style="color: red; display: none;">Invalid credentials. Please try again.</p>
+        </div>
+    
+        <div id="voting-section">
+            <div class="search-container">
+                <input type="text" class="search-input" id="candidateSearch" placeholder="Search for a candidate...">
+                <button class="btn" onclick="searchCandidate()">Search</button>
+            </div>
+    
+            <div class="ballot">
+                <div class="candidate">
+                    <img src="Img\62d0edfd6d2b4429a5f6849a88436827.jpg" alt="Candidate A" class="placeholder-image">
+                    <h3>Bemdoo Terkuma Joseph</h3>
+                    <p>Contestant A: President NUBESS</p>
+                    <button class="vote-button" onclick="voteForCandidate('A')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="Img\1685116794665.jpg" alt="Candidate B" class="placeholder-image">
+                    <h3>Candidate B</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('B')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="Img\1685116811977.jpg" alt="Candidate C" class="placeholder-image">
+                    <h3>Candidate C</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('C')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="Img\1689943429966.jpg" alt="Candidate D" class="placeholder-image">
+                    <h3>Candidate D</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('D')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="Img\1691477400717.jpg" alt="Candidate E" class="placeholder-image">
+                    <h3>Candidate E</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('E')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="Img\1691477400717.jpg" alt="Candidate F" class="placeholder-image">
+                    <h3>Candidate F</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('F')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="Img\1693138425867.jpg" alt="Candidate G" class="placeholder-image">
+                    <h3>Candidate G</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('G')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="Img\1700853513797.jpg" alt="Candidate H" class="placeholder-image">
+                    <h3>Candidate H</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('H')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="Img\1700853539026.jpg" alt="Candidate I" class="placeholder-image">
+                    <h3>Candidate I</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('I')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="Img\c94d016b599b4114a66c403192c32661.jpg" alt="Candidate J" class="placeholder-image">
+                    <h3>Candidate J</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('J')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="Img\FB_IMG_17029697512116967.jpg" alt="Candidate K" class="placeholder-image">
+                    <h3>Candidate K</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('K')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="Img\IMG-20231216-WA0010_1.jpg" alt="Candidate L" class="placeholder-image">
+                    <h3>Candidate M</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('M')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="/api/placeholder/150/150" alt="Candidate N" class="placeholder-image">
+                    <h3>Candidate N</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('N')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="/api/placeholder/150/150" alt="Candidate O" class="placeholder-image">
+                    <h3>Candidate O</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('O')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="/api/placeholder/150/150" alt="Candidate P" class="placeholder-image">
+                    <h3>Candidate P</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('P')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="/api/placeholder/150/150" alt="Candidate R" class="placeholder-image">
+                    <h3>Candidate R</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('Q')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="/api/placeholder/150/150" alt="Candidate R" class="placeholder-image">
+                    <h3>Candidate R</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('R')">Vote</button>
+                </div>
+                <div class="candidate">
+                    <img src="/api/placeholder/150/150" alt="Candidate I" class="placeholder-image">
+                    <h3>Candidate I</h3>
+                    <p>Political Party</p>
+                    <button class="vote-button" onclick="voteForCandidate('I')">Vote</button>
+                </div>
+            </div>
+            <a href="index.html" class="back-button">Vote Again</a>
+        </div>
+    </section>
+    
+<script src="login.js"></script>
+</body>
+</html>
