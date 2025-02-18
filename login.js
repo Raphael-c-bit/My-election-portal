@@ -1,6 +1,7 @@
 const users = [
-    {id: "12346", password: "password123", hasvoted: false},
-    { id: "6789", password: "password456", hasVoted: false },
+    {id: "09876", password: "password098", hasvoted: false},
+    { id: "54321", password: "password543", hasVoted: false },
+    { id: "64321", password: "password243", hasVoted: false },
 ];
 
 // Store voted users in localStorage to persist across sessions
