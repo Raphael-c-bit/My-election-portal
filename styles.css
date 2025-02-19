@@ -139,8 +139,8 @@ nav {
 }
 
 .slide img {
-  width: 100%;  /* Changed from 1000% to 100% */
-  height: 110%;
+  /* width: 80%;  Changed from 1000% to 100% */
+  height: 800px;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -149,8 +149,9 @@ nav {
 
 .text-box {
   position: relative;  /* Changed from absolute to relative */
-  left: 5%;
-  max-width: 40%;
+  max-width: 100%;
+  height: 550px;
+  width: 1500px;
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   padding: 20px;
